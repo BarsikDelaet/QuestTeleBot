@@ -10,7 +10,7 @@ bot = telebot.TeleBot(config.TOKEN)
 def message_start(message):
     """Начало работы с ботом."""
     time.sleep(300)
-    bot.send_message(message.chat.id, 'Привет, начнем!)')
+    bot.send_message(message.chat.id, 'Начнем игру...')
     quest = 0
     quest_now = ChekMessage(bot)
     quest_now.send_msg(message, quest)
